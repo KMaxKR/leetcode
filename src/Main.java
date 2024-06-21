@@ -1,0 +1,12 @@
+import palindrome.Palindrome;
+import romanToInteger.romanToInteger;
+
+public class Main {
+    public static void main(String[] args) {
+//        Palindrome palindrome = new Palindrome();
+//        System.out.println(palindrome.isPalindrome(121));
+
+        romanToInteger romToInt = new romanToInteger();
+        System.out.println(romToInt.romanToInt("MCMXCIV"));
+    }
+}
