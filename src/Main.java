@@ -11,6 +11,6 @@ public class Main {
 //        System.out.println(romToInt.romanToInt("MCMXCIV"));
 
         LongestPrefix longestPrefix = new LongestPrefix();
-        System.out.println(longestPrefix.longestCommonPrefix(new String[]{"flower","flow","flight"}));
+        System.out.println(longestPrefix.longestCommonPrefix(new String[]{"a", "ab"}));
     }
 }
