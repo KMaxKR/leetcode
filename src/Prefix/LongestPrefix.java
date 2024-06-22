@@ -1,34 +1,23 @@
 package Prefix;
 
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Set;
 
 public class LongestPrefix {
     public String longestCommonPrefix(String[] strs) {
-        String output = "";
-        LinkedList<Character> list = new LinkedList<>(){};
-        if (strs.length == 1){
-            output += strs[0];
-            return output;
-        }
-        for (int i = 0; i < strs.length - 1; i++){
-            char[] prev = strs[i].toCharArray();
-            char[] next = strs[i + 1].toCharArray();
-            for (int j = 0; j < Math.min(prev.length, next.length); j++){
-                if (prev[j] == next[j]){
-                    list.add(prev[j]);
-                }
+        StringBuilder output = new StringBuilder();
+        Arrays.sort(strs);
+        String first = strs[0];
+        String last = strs[strs.length-1];
+        for (int i=0; i<Math.min(first.length(), last.length()); i++) {
+            if (first.charAt(i) != last.charAt(i)) {
+                return output.toString();
             }
+            output.append(first.charAt(i));
         }
-        for (int i = 0; i < list.size(); i++){
-            for (int j = i + 1; j < list.size(); j++){
-                if (list.get(i).equals(list.get(j))){
-                    output += list.get(i);
-                }
-            }
-        }
-        return output;
+        return output.toString();
     }
 }
