@@ -15,6 +15,6 @@ public class Main {
 //        System.out.println(longestPrefix.longestCommonPrefix(new String[]{"flower","flow","flight"}));
 
         validParentheses valid = new validParentheses();
-        valid.isValid("(){]");
+        System.out.println(valid.isValid("()"));
     }
 }
