@@ -14,6 +14,7 @@ public class validParentheses {
                 stack.pop();
             }
         }
+        long[][] l = new long[][]{};
         return stack.isEmpty();
     }
 }

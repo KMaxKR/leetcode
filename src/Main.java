@@ -1,7 +1,13 @@
 import Prefix.LongestPrefix;
 import ValidParenthese.validParentheses;
+import merge_list.ListNode;
+import merge_list.MergeList;
 import palindrome.Palindrome;
 import romanToInteger.romanToInteger;
+import sqrt.SQRT;
+import twosum.twoSum;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,7 +20,15 @@ public class Main {
 //        LongestPrefix longestPrefix = new LongestPrefix();
 //        System.out.println(longestPrefix.longestCommonPrefix(new String[]{"flower","flow","flight"}));
 
-        validParentheses valid = new validParentheses();
-        System.out.println(valid.isValid("()"));
+        //validParentheses valid = new validParentheses();
+        //System.out.println(valid.isValid("()"));
+
+        //SQRT sqrt = new SQRT();
+        //System.out.println(sqrt.mySqrt(63));
+        //System.out.println(sqrt.mySqrt(1));
+
+        //twoSum twoSum = new twoSum();
+        //System.out.println(Arrays.toString(twoSum.returnTwoSum(new int[]{2, 0, 3, 5}, 5)));
+
     }
 }
