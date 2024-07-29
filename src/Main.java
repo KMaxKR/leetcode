@@ -3,6 +3,7 @@ import ValidParenthese.validParentheses;
 import merge_list.ListNode;
 import merge_list.MergeList;
 import palindrome.Palindrome;
+import plusOne.PlusOne;
 import removeDuplicates.RemoveDuplicates;
 import romanToInteger.romanToInteger;
 import sqrt.SQRT;
@@ -31,8 +32,10 @@ public class Main {
         //twoSum twoSum = new twoSum();
         //System.out.println(Arrays.toString(twoSum.returnTwoSum(new int[]{2, 0, 3, 5}, 5)));
 
-        RemoveDuplicates remove = new RemoveDuplicates();
-        System.out.println(remove.removeDuplicates(new int[]{1, 1, 2}));
+        //RemoveDuplicates remove = new RemoveDuplicates();
+        //System.out.println(remove.removeDuplicates(new int[]{1, 1, 2}));
 
+        PlusOne plusOne = new PlusOne();
+        plusOne.plusOne(new int[]{9,8,7,6,5,4,3,2,1,0});
     }
 }
