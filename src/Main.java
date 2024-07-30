@@ -23,7 +23,7 @@ public class Main {
 //        System.out.println(longestPrefix.longestCommonPrefix(new String[]{"flower","flow","flight"}));
 
         validParentheses valid = new validParentheses();
-        System.out.println(valid.isValid("({[]]})"));
+        System.out.println(valid.isValid("({))"));
 
         //SQRT sqrt = new SQRT();
         //System.out.println(sqrt.mySqrt(63));
