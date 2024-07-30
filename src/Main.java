@@ -22,8 +22,8 @@ public class Main {
 //        LongestPrefix longestPrefix = new LongestPrefix();
 //        System.out.println(longestPrefix.longestCommonPrefix(new String[]{"flower","flow","flight"}));
 
-        //validParentheses valid = new validParentheses();
-        //System.out.println(valid.isValid("()"));
+        validParentheses valid = new validParentheses();
+        System.out.println(valid.isValid("({[]]})"));
 
         //SQRT sqrt = new SQRT();
         //System.out.println(sqrt.mySqrt(63));
@@ -35,7 +35,7 @@ public class Main {
         //RemoveDuplicates remove = new RemoveDuplicates();
         //System.out.println(remove.removeDuplicates(new int[]{1, 1, 2}));
 
-        PlusOne plusOne = new PlusOne();
-        plusOne.plusOne(new int[]{9,8,7,6,5,4,3,2,1,0});
+        //PlusOne plusOne = new PlusOne();
+        //plusOne.plusOne(new int[]{9,8,7,6,5,4,3,2,1,0});
     }
 }

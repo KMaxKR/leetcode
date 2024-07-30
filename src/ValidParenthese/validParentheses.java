@@ -3,18 +3,26 @@ package ValidParenthese;
 import java.util.Stack;
 
 public class validParentheses {
-
     public boolean isValid(String s) {
-        Stack<Character> stack = new Stack<>();
-        for (char ch : s.toCharArray()){
-            stack.push(ch);
-        }
-        for (int i = 0; i < stack.size(); i++){
-            if (stack.elementAt(i) == stack.lastElement()) {
-                stack.pop();
+        Stack<Character> list = new Stack<>();
+        for (Character el : s.toCharArray()){
+            if (el == '('){
+                list.push(')');
+            } else if (el == '{'){
+                list.push('}');
+            } else if (el == '['){
+                list.push(']');
+            } else if (list.contains(el)){
+                list.pop();
+            }else{
+                return false;
             }
+
         }
-        long[][] l = new long[][]{};
-        return stack.isEmpty();
+        if (list.size() % 2 != 0){
+            return false;
+        }else {
+            return list.isEmpty();
+        }
     }
 }
